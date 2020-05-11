@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        label,td{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: "20px";
+            color:darksalmon;
+            font-weight: bolder;
+        }
+        body{
+            background: beige;
+        
+        }
+        </style><!--
+        <script> function display()
+        {alert("hacker: your pass word is"+document.getElementById("pas").value)}
+            </script>-->
+        <title>
+            Forms 
+        </title>
+    </head>
+    <body><center>
+        <form action="hbj.php" method="POST" enctype="multipart/form-data">
+            <table width="300">
+                <tr>
+                    <td>
+                        <label for="name">UserName</label>
+                    </td>
+                    <td>
+                            <input type="text" name="name" id="1"placeholder="Fullname"
+                            
+                            autofocus/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>EMAIL ID</td>
+                    <td><input type="email" id="email"/></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">
+                            Password
+                        </label>
+                    </td>
+                    <td>
+                        <input type="password" name ="password" id="pas" maxlength="10" required="required"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Comments
+                    </td>
+                    <td>
+                    <textarea cols="50" rows="20"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>SINGLE:</td>
+                    <td><input type="radio" name="r"> YES <input type="radio" name="r"> NO </td>
+                </tr>
+                <tr>
+                    <td>Greet</td>
+                    <td>
+                    <select>
+                        <option value="vanakam" id="a1">vanakam</option>
+                        <option id="2">namashkar</option>
+                        <option id="3">hello</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Color Picker:</td>
+                        <td><input type="color"/></td>
+                    </tr>
+                <tr>
+                    <td>Number Picker:</td>
+                    <td><input type="number" min="5" max="44"/></td>
+                </tr>
+                <tr>
+                    <td>
+                        Ranges:
+                    </td>
+                    <td>
+                        <input type="range" name="rangeval"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        CHOOSE YOU DOB:
+                    </td>
+                <td>
+                    <input type="date" name="dob" min="1998-01-01" max="2000-01-01"/> <!--Date format when declaring is YYYY_MM_DD-->
+
+                </td>
+                </tr>
+                    <tr>
+                        <td>
+                        DATE & TIME:
+                    </td>
+                    <td><input type="dateTime" id="time"/>
+                </td></tr>
+                <tr>
+                    <td>UPLOAD A document:</td>
+                    <td><input type="file" id="file" name="file"></td>
+                </tr>
+
+
+
+
+
+
+                <tr>
+                    <td><input type="submit" value="SUBMIT" id="d" onclick="display()" formtarget="_blank"></td>
+                </tr>
+                
+            </table>
+        </form>
+        </body>
+</html>
